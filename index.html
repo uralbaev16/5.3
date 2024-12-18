@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Users</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <img class="user__image" src="./guy-logo.png"
+                    alt="user">
+                <h3 class="user__name">Ramazon Uralbaev</h3>
+                <p class="profession">Frontend developer</p>
+                <p class="education">Najot Talim</p>
+                <button class="contact__btn">Contact</button>
+            </div>
+        </div>
+    </div>
+    <button class="users__btn" onclick="showModal()">Add User</button>
+
+    <div class="container">
+        <div class="modal__wrapper">
+            <p class="modal__title">Formani to'ldiring</p>
+            <form class="form" action="">
+                <p class="info">Rasmingiz:</p>
+                <input class="form__image" type="url" placeholder="URL Image" required>
+                <p class="info">Ism va Familya:</p>
+                <input class="form__name" type="text" placeholder="Fname and Lname" required>
+                <p class="info">Kasbingiz:</p>
+                <input class="form__profession" type="text" placeholder="Your profession" required>
+                <p class="info">Qayerda o'qiysiz:</p>
+                <input class="form__educate" type="text" placeholder="Study" required>
+                <div class="action">
+                    <button class="create__btn">Create</button>
+                    <button class="close__btn" onclick="closeModal()">Exit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
